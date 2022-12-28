@@ -1,0 +1,16 @@
+.todo-list {
+    transition: background 0.5s;
+}
+
+.todo-list:hover {
+    cursor: pointer;
+    background: rgba(120, 255, 197, 0.49);
+}
+
+.delete-item {
+    transition: transform 0.1s;
+}
+
+.delete-item:hover {
+    transform: scale(1.2);
+}

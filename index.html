@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo App</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<section class="tasks-wrap mt-5">
+		<div class="container">
+			<div class="card mb-3">
+				<div class="card-header d-flex justify-content-between">
+					<h3 class="text-center">Додача нового завдання</h3>
+					<button class="btn btn-success todo-sort">Сортувати список</button>
+				</div>
+				<!-- /.card-header -->
+				<div class="card-body">
+					
+					<form name="addTodoItem">
+						<div class="form-group">
+							
+							<input type="text" class="form-control" id="todoText" placeholder="Вкажіть нове завдання">
+							<div class="invalid-feedback">
+								Ви нічого не ввели!
+							</div>
+							<div class="valid-feedback">
+								Ви успішно добавили нове завдання!
+							</div>
+						</div>
+						<!-- /.form-group -->
+						<button type="submit" class="btn btn-primary">Добавити</button>
+					</form>
+				</div>
+				<!-- /.card-body -->
+			</div>
+			<!-- /.card -->
+
+
+			<div class="card mb-3">
+				<div class="card-header text-center">
+					<h4>Список діючих завдань</h4>
+				</div>
+				<!-- /.card-header -->
+				<div class="card-body">
+					<ul class="list-group">
+<!-- 						<li></li> -->
+					</ul>
+				</div>
+				<!-- /.card-body -->
+					
+			</div>
+			<!-- /.card -->
+			<button class="btn btn-primary clear-btn todo-clear">Очистити список</button>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.tasks-wrap -->
+	
+	
+<script src="js/main.js"></script>
+</body>
+</html>
